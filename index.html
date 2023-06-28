@@ -1,0 +1,32 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Rock paper scissors</title>
+</head>
+<body>
+    <div id="game">
+        <div id="result">
+            <p id="title">Rock papers scissors</p>
+        </div>
+        <div id="options">
+            <img id="rock" onclick="selectOption(rock, 'rock')" class="option" src="./assets/rock.svg"> 
+            <img id="paper" onclick="selectOption(paper, 'paper')" class="option" src="./assets/paper.svg"> 
+            <img id="scissors" onclick="selectOption(scissors, 'scissors')" class="option" src="./assets/scissors.svg"> 
+        </div>
+        <div id="selections">
+            <img id="my-selection" class="selection" src="./assets/question.svg"> 
+            <p>VS</p>
+            <img id="cpu-selection"class="selection" src="./assets/question.svg"> 
+        </div>
+        <div class="actions">
+            <button class="button" onclick="play()" id="play-button" disabled>Play</button>
+            <button class="button" onclick="resetGame()" id="reset-button">Play again</button>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="script.js"></script>

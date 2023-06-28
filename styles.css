@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&display=swap');
+
+p {
+    font-family: 'Indie Flower';
+    font-size: 8rem;
+    margin: 0px;
+    align-self: center;
+    text-align: center;
+}
+
+#selections {
+    display: flex;
+    gap: 2rem
+}
+
+#game {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#options {
+    display: flex;
+    gap: 2rem;
+    height: 15rem;
+}
+
+#reset-button{
+    display: none;
+}
+
+.selection {
+    height: 20rem;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.option {
+    width: 10rem;
+    transition: width 0.5s;
+    cursor: pointer;
+}
+
+.option:hover {
+    width: 12rem;
+}
+
+.button {
+    border-radius: 25px;
+    border: 4px solid black;
+    background-color: white; 
+    font-family: 'Indie Flower';
+    padding: 15px 32px;
+    font-weight: 900;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+.button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media only screen and (max-width: 900px) {
+    p {
+        font-size: 3rem;
+    }
+
+    #options {
+        flex-direction: row;
+        flex-flow: wrap;
+        justify-content: center;
+        height: auto;
+    }
+
+    .selection{
+        height: 7rem;
+    }
+
+    .option{
+        width: 5rem;
+    }
+
+    .option:hover{
+        width: 5rem;
+    }
+
+    .button {
+        padding: 8px 21px;
+        font-size: 21px;
+        border: 2px solid black;
+    }
+}
